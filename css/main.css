@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    user-select: none;
+}
+
+body{
+    background: rgba(234, 234, 145, 0.126);
+}
+
+.parfum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    margin:  30px auto;
+}
+
+.per-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.per-grid article div img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform .5s;
+}
+
+.per-grid article div img:hover{
+    transform: scale(1.01);
+}
+
+.per-text{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 8px;
+}
+
+.per-text h6{
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.per-text h3{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px 0;
+    width: 250px;
+    margin: 5% 0;
+}
+
+.per-text p{
+    width: 280px;
+}
+
+.price{
+    padding: 20px 0;
+}
+
+.price h2{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(26, 66, 26);
+}
+
+.price span{
+    color: gray;
+    float: right;
+    font-size: 18px;
+    text-decoration: line-through;
+    transform: translateY(-30px);
+}
+
+.cart{
+    margin-top: 40px;
+}
+
+.cart button{
+    background: rgb(26, 66, 26);
+    border: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 50px;
+    outline: none;
+}
+
+.cart button #fa{
+    margin-right: 20px;
+}
